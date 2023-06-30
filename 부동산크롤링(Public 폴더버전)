@@ -102,7 +102,7 @@ excel = win32com.client.Dispatch("Excel.Application")
 wb = excel.Workbooks.open(new_path)
 ws = wb.Activesheet
 
-ws.Range("A1:D100").Copy()  # 시세자료 Data 복사
+ws.Range("A1:D1000").Copy()  # 시세자료 Data 복사
 
 wc = excel.Workbooks.open(apart_path)   # 부동산크롤링 엑셀 실행
 wd = wc.Activesheet
